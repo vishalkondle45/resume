@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Accordion = ({ title, content }: Props) => {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle }] = useDisclosure(true);
   return (
     <Paper withBorder radius="xl" p="xl">
       <Group justify="space-between" wrap="nowrap">
